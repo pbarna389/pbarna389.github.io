@@ -1,0 +1,138 @@
+html {
+  color: #434343;
+  width: 1300px;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background: #002104;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 300%;
+}
+
+a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px 50px 0px;
+}
+
+main {
+  flex-grow: 1;
+  margin-right: 15px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+aside {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  font-size: 250%;
+}
+
+h3,h4,h5 {
+  font-family:'Montserrat', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4,h5 {
+  margin: 0px;
+}
+
+blockquote::before {
+  content: '“'; 
+}
+
+blockquote {
+  font-size: 500%;
+}
+
+.text {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.ending {
+  color: white;
+  width: 78%;
+  margin: 50px 130px 0px 130px;
+  padding: 20px;
+  border-top: 5px solid #3d3b3b;
+}
+
+.banner {
+  position: absoulte;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: url(http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png);
+  color: #3b3a38;
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+}
+
+h1,h2 {
+  position: relative;
+  left: 25%;
+  top: 60%;
+  margin: 0px;
+}
+
+.top {
+  color: black;
+}
+
+#quote {
+  flex-grow: 1;
+  background: #002104;
+}
+
+#space {
+  flex-grow: 10;
+  background: white;
+}
