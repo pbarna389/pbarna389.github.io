@@ -17,6 +17,7 @@ body {
   margin: 0;
 
   div {
+    box-sizing: border-box;
     width: 290px;
     height: 416px;
     background-color: #fff;
@@ -27,6 +28,7 @@ body {
       color: #337933;
       font-size: 48px;
       font-weight: 400;
+      margin: 0;
     }
 
     h6 {
