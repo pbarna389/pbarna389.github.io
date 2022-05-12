@@ -32,6 +32,10 @@ body div {
   padding: 27px;
 }
 
+body div:first-child {
+  margin: 62px;
+}
+
 body div h2 {
   color: #337933;
   font-size: 48px;

@@ -24,6 +24,9 @@ body {
 
     padding: 27px;
 
+    &:first-child {
+      margin: 62px;
+    }
     h2 {
       color: #337933;
       font-size: 48px;
