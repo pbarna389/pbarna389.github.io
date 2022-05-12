@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: green;
+}
+
+body {
+  position: relative;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+figure {
+  width: 600px;
+  padding: 20px;
+}
+
+figure h1 {
+  font-weight: 100;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 520px) {
+  figure h1 {
+    font-size: 24px;
+  }
+}
+
+figure div {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background: #f9c582;
+  padding: 20px;
+}
+
+@media screen and (max-width: 520px) {
+  figure div {
+    width: 100%;
+  }
+}
+
+figure div input {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  max-width: 480px;
+  height: 64px;
+}
+
+@media screen and (max-width: 520px) {
+  figure div input {
+    width: calc(100vw - 40px);
+    margin-left: 20px;
+  }
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  background: #f9c582;
+  font-size: 21px;
+  color: #006837;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 520px) {
+  button {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
