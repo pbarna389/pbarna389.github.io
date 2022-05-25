@@ -1,0 +1,151 @@
+* {
+  --bgcolor: #f7e4d4;
+  --textcolor: #467745;
+  --mobileWidth: calc(100% - 40px);
+  --mobileMargin: 20px;
+  --maxWidthInput: 480px;
+  --margin-top: 25px;
+  font-family: "EB Garamond", serif;
+  color: var(--textcolor);
+  margin-top: var(--margin-top);
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bgcolor);
+  margin: 0;
+}
+
+section,
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+section h1 {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  section h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: calc(var(--mobileMargin) + 5px);
+  }
+}
+
+section input,
+section textarea,
+section div {
+  width: var(--maxWidthInput);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+section input,
+section .checkbox-terms {
+  font-weight: 500;
+}
+
+section input {
+  width: var(--maxWidthInput);
+  height: 64px;
+  background-color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  section input {
+    width: var(--mobileWidth);
+    margin-left: var(--mobileMargin);
+  }
+}
+
+section textarea {
+  background-color: white;
+  width: var(--maxWidthInput);
+  height: 120px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  section textarea {
+    width: var(--mobileWidth);
+    margin-left: var(--mobileMargin);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  section div {
+    width: var(--mobileWidth);
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: calc(var(--mobileMargin) + 5px);
+  }
+}
+
+section div input,
+section div span {
+  font-size: 21px;
+  font-weight: 500px;
+  margin: 0;
+}
+
+@media screen and (max-width: 520px) {
+  section div input,
+  section div span {
+    margin-right: var(--mobileMargin);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  section div span {
+    max-width: 300px;
+  }
+}
+
+section div input {
+  width: 25px;
+  height: 25px;
+}
+
+section button {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 280px;
+  height: 80px;
+  color: var(--bgcolor);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: var(--textcolor);
+}
+/*# sourceMappingURL=style.css.map */
