@@ -9,6 +9,8 @@
 
   --margin-top: 25px;
 
+  --inputPadding: 20px;
+
   font-family: "EB Garamond", serif;
   color: var(--textcolor);
 
@@ -27,18 +29,19 @@ body {
 section,
 div {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 section {
-  height: 100vh;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
   margin: 0;
 
   h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 400;
     text-align: center;
 
@@ -67,7 +70,7 @@ section {
     height: 64px;
 
     background-color: white;
-    padding: 15px;
+    padding: var(--inputPadding);
 
     @media screen and (max-width: 520px) {
       width: var(--mobileWidth);
@@ -81,7 +84,7 @@ section {
     width: var(--maxWidthInput);
     height: 120px;
 
-    padding: 15px;
+    padding: var(--inputPadding);
 
     @media screen and (max-width: 520px) {
       width: var(--mobileWidth);
@@ -99,7 +102,7 @@ section {
     input,
     span {
       font-size: 21px;
-      font-weight: 500px;
+      font-weight: 500;
 
       margin: 0;
 
@@ -109,6 +112,8 @@ section {
     }
 
     span {
+      margin-left: 15px;
+
       @media screen and (max-width: 520px) {
         max-width: 300px;
       }
