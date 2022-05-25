@@ -104,8 +104,12 @@ section {
     }
 
     input,
-    span {
-      font-size: 21px;
+    span,
+    a {
+      width: var(--maxWidthInput);
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
       font-weight: 500;
 
       margin: 0;
@@ -124,8 +128,8 @@ section {
     }
 
     input {
-      width: 25px;
-      height: 25px;
+      width: 16px;
+      height: 16px;
 
       border: none;
     }

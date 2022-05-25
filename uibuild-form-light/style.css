@@ -112,15 +112,19 @@ section div a {
 }
 
 section div input,
-section div span {
-  font-size: 21px;
+section div span,
+section div a {
+  width: var(--maxWidthInput);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
 
 @media screen and (max-width: 520px) {
   section div input,
-  section div span {
+  section div span,
+  section div a {
     margin-right: var(--mobileMargin);
   }
 }
@@ -136,8 +140,8 @@ section div span {
 }
 
 section div input {
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
   border: none;
 }
 
