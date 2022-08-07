@@ -67,6 +67,17 @@ section div {
 section input,
 section .checkbox-terms {
   font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+section input.checkbox-terms:checked,
+section .checkbox-terms.checkbox-terms:checked {
+  background-color: black;
 }
 
 section input {
@@ -158,5 +169,11 @@ section button {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   background-color: var(--textcolor);
+}
+
+@media screen and (max-width: 520px) {
+  section {
+    margin: 0 var(--mobileMargin);
+  }
 }
 /*# sourceMappingURL=style.css.map */

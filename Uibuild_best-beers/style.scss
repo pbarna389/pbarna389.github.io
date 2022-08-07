@@ -1,0 +1,151 @@
+$primaryColor: #ffeedf;
+$secondaryColor: #145434;
+$height: 60px;
+$fontSize: 36px;
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+body {
+    background-color: $primaryColor;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+
+    width: 100%;
+    height: $height;
+
+    border-bottom: 1px solid $secondaryColor;
+
+    h1 {
+        font-weight: bolder;
+        font-size: $fontSize;
+        color: $secondaryColor
+
+    }
+}
+
+.material-icons-outlined {
+    font-size: $fontSize;
+    color: $secondaryColor
+}
+
+.cardWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1200px; 
+    size: 24px;
+    
+    .card {
+        position: relative;
+        color: $primaryColor;
+        background-color: $secondaryColor;
+
+        width: 400px;
+        height: 300px;
+        padding: 35px;
+
+        margin-top: 60px;
+
+        h2 {
+            font-size: $fontSize;
+            font-weight: 100;
+            margin-bottom: 50px;
+        }
+
+        .text-wrapper {
+            border-top: 1px solid $primaryColor;
+            p {
+                font-size: calc($fontSize / 2) ;
+                margin-top: 10px;
+                &:last-child {
+                    font-weight: bold;
+                    margin-top: 0;
+                }
+            }
+
+        }
+
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 3px solid $secondaryColor;
+            background-color: $primaryColor;
+            text-transform: lowercase;
+
+            width: 200px;
+
+            font-size: 14px;
+            font-weight: bold;
+    
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+
+            height: 50px;
+
+            &:hover {
+                border-color: $primaryColor;
+                background: $secondaryColor;
+                color: $primaryColor;
+                span {
+                    
+                    background: $secondaryColor;
+                    color: $primaryColor;
+                }
+            }
+
+            span {
+                font-size: inherit;
+                &:last-child{
+                    position: absolute;
+                    font-size: $fontSize;
+                    right: 0
+                }
+            }
+        }
+        
+        .id {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: -10%;
+            color: $secondaryColor;
+            background-color: $primaryColor;
+            font-size: 24px;
+
+            width: 40px;
+            height: 40px;
+            border: 1px $secondaryColor solid;
+            border-radius: 50%;
+
+            transform: translate(50%, -50%);
+        }
+
+    }
+}

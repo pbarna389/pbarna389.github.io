@@ -63,6 +63,15 @@ section {
   input,
   .checkbox-terms {
     font-weight: 500;
+    appearance: none;
+    border: none;
+    background-color: white;
+
+    padding: 0;
+
+    &.checkbox-terms:checked {
+      background-color: black;
+    }
   }
 
   input {
@@ -152,5 +161,9 @@ section {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background-color: var(--textcolor);
+  }
+
+  @media screen and (max-width: 520px) {
+    margin: 0 var(--mobileMargin);
   }
 }
