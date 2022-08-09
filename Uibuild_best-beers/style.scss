@@ -15,11 +15,13 @@ $fontSize: 36px;
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
+    min-width: 450px;
 }
 
 body {
     background-color: $primaryColor;
     margin: 0;
+    min-width: 450px;
 }
 
 header {
@@ -53,7 +55,9 @@ header {
     align-items: center;
     gap: 60px;
 
-    max-width: 1200px; 
+    max-width: 1200px;
+    min-width: 30%;
+    height: fit-content; 
     size: 24px;
     
     .card {
@@ -77,8 +81,8 @@ header {
         .text-wrapper {
             border-top: 1px solid $primaryColor;
             p {
-                font-size: calc($fontSize / 2) ;
-                margin-top: 10px;
+                font-size: calc($fontSize / 2)px ;
+                margin-top: 15px;
                 &:last-child {
                     font-weight: bold;
                     margin-top: 0;

@@ -20,11 +20,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 60px;
+  min-width: 450px;
 }
 
 body {
   background-color: #ffeedf;
   margin: 0;
+  min-width: 450px;
 }
 
 header {
@@ -70,6 +72,10 @@ header h1 {
           align-items: center;
   gap: 60px;
   max-width: 1200px;
+  min-width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   size: 24px;
 }
 
@@ -95,8 +101,8 @@ header h1 {
 }
 
 .cardWrapper .card .text-wrapper p {
-  font-size: calc($fontSize / 2);
-  margin-top: 10px;
+  font-size: calc($fontSize / 2) px;
+  margin-top: 15px;
 }
 
 .cardWrapper .card .text-wrapper p:last-child {
