@@ -11,6 +11,7 @@ const header = logo => {
 const loadEvent = () => {
     const rootEl = document.querySelector("#root");
 
+    rootEl.insertAdjacentHTML('beforeend', header(books.logo))
 }
 
 window.addEventListener('load', loadEvent);
