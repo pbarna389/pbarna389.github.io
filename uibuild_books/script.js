@@ -19,9 +19,9 @@ const bookCard = (id, book, buttonText) => {
     console.log(book)
     return `
         <div class="bookCard">
-            <p class="index">${id}</p>
-            <h6 class="author">${book.sub}</h6>
-            <h2 class="title">${book.title}</h2>
+            <p>${id}</p>
+            <h6>${book.sub}</h6>
+            <h2>${book.title}</h2>
             <p class="text">${book.text}</p>
             <button>
                 <span>${buttonText}</span>

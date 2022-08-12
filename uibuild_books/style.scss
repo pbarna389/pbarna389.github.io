@@ -4,6 +4,9 @@ $secondaryColor: #1a24fb;
 $firstFont: "Montserrat", sans-serif;
 $secondFont: 'Overpass', sans-serif;
 
+$fontSizebase: 12px;
+$biggerFontSize: 20px;
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ header {
     justify-content: space-between;
 
     width: 100%;
-    height: 40px;
+    height: calc(#{$biggerFontSize} * 2);
 
     font-family: $firstFont;
 
@@ -25,12 +28,124 @@ header {
 
     padding: 0 15px;
 
+    margin-bottom: 100px;
+
     & span:first-child{
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: calc(#{$fontSizebase});
         letter-spacing: 0.2rem;
     }
     & span:last-child{
-        font-size: 24px;
+        font-size: calc(#{$fontSizebase} * 2);
+    }
+}
+
+.bookWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    row-gap: 100px;
+    column-gap: $biggerFontSize;
+
+    max-width: 1280px;
+    width: 100%;
+
+    margin: 0 auto;
+
+
+    font-family: $firstFont;
+
+    
+    @media (max-width: 740px) {
+        margin: inherit 36px;
+    }
+
+
+    .bookCard {
+        position: relative;
+
+        max-width: 385px;
+        width: 100%;
+
+        height: 424px;
+
+        padding: calc(#{$biggerFontSize} * 2);
+
+        border: 1px solid $secondaryColor;
+
+        font-family: 'Montserrat', sans-serif;
+        color: $secondaryColor;
+
+        text-align: left;
+
+        p{
+            &:first-child {
+                position: absolute;
+                top: 0;
+                right: -20px;
+
+                width: calc(#{$biggerFontSize} * 2);
+                height: calc(#{$biggerFontSize} * 2);
+
+                font-weight: 700;
+                font-size: calc(#{$fontSizebase} * 2);
+                font-family: inherit;
+
+                margin-right: 13px;
+            }
+        }
+        h6 {
+            font-weight: 100;
+            font-size: $fontSizebase;
+            text-transform: uppercase;
+            
+            letter-spacing: 3px;
+
+            margin-bottom: $fontSizebase;
+        }
+
+        h2 {
+            font-size: calc(#{$fontSizebase} * 3);
+            font-weight: 700;
+            min-height: 100px;
+        }
+
+        .text {
+            font-size: calc(#{$fontSizebase} + 4px);
+            font-family: inherit;
+            font-weight: 400;
+
+            line-height: 1.2rem;
+        }
+
+        button {
+            position: absolute;
+            bottom: -7.5%;
+            right: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            color: inherit;
+
+            background: none;
+            border: none;
+            font-family: inherit;
+            span {
+                &:first-child {
+                    font-size: 14px;
+                }
+            }
+
+
+            &:hover {
+                background-color: $secondaryColor;
+                cursor: pointer;
+                color: $primaryColor;
+            }
+        }
     }
 }
